@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TE AMO CLEBNHA</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="spotify-title">
+            <i class="cursor-pointer fa-solid fa-angle-down"></i>
+            <h1>Playlist do nosso amor</h1>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="spotify-rest">
+            <div class="song-image">
+                <img src="img/cleb1.jpg" alt="">
+            </div>
+
+            <div class="song-details">
+                <div class="song-title">
+                    <div>
+                        <h2>Fernanda</h2>
+                        <h3>Teto</h3>
+                    </div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div class="song-length">
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="duration">
+                        <div class="current-time">00:00</div>
+                        <div class="total-duration">00:00</div>
+                    </div>
+                </div>
+
+                <div class="song-buttons">
+                    <i class="cursor-pointer fa-solid fa-shuffle"></i>
+                    <div>
+                        <i class="cursor-pointer fa-solid fa-backward-step"></i>
+                        <i class="cursor-pointer playpause-track fa-solid fa-circle-play"></i>
+                        <i class="cursor-pointer fa-solid fa-forward-step"></i>
+                    </div>
+                    <i class="cursor-pointer fa-solid fa-repeat"></i>
+                </div>
+            </div>
+
+            <div class="song-description">
+                <div class="about-relationship">
+                    <div class="cover">
+                        <h2 class="font-semibold text-xl">Sobre o casal</h2>
+                        <div></div>
+                        <img src="img/sobre-o-casal.jpg" alt="">
+                    </div>
+
+                    <div class="spotify-time-together">
+                        <div>
+                            <p class="font-bold text-2xl">SM64 e Clebnha</p>
+                            <p class="font-base text-base">Juntos desde 2026</p>
+                        </div>
+
+                        <div class="grid gap-4 grid-cols-3">
+                            <div class="count">
+                                <p class="number text-2xl font-bold" id="years">0</p>
+                                <p>Anos</p>
+                            </div>
+
+                            <div class="count">
+                                <p class="number text-2xl font-bold" id="months">0</p>
+                                <p>Meses</p>
+                            </div>
+
+                            <div class="count">
+                                <p class="number text-2xl font-bold" id="days">0</p>
+                                <p>Dias</p>
+                            </div>
+
+                            <div class="count">
+                                <p class="number text-2xl font-bold" id="hours">0</p>
+                                <p>Horas</p>
+                            </div>
+
+                            <div class="count">
+                                <p class="number text-2xl font-bold" id="minutes">0</p>
+                                <p>Minutos</p>
+                            </div>
+
+                            <div class="count">
+                                <p class="number text-2xl font-bold" id="seconds">0</p>
+                                <p>Segundos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="song-lyrics">
+                    <h2>Mensagem especial</h2>
+                    <p>Não importa onde estejamos, desde que você esteja comigo. Porque é no som da sua risada e no calor de sua voz que encontro o que muitos chamam de lar. Você é meu lugar favorito no mundo. 💞
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/counter.js"></script>
+    <script src="js/song.js"></script>
+    <script src="js/changeCover.js"></script>
+    <script src="https://kit.fontawesome.com/824a03be4b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
